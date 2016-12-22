@@ -3,8 +3,8 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: [
-        './src/index.js', // The application entry point
-        'webpack-hot-middleware/client', // some webpack HR code to inject
+        './src/index.js',
+        'webpack-hot-middleware/client',
     ],
     output: {
         path: path.join(__dirname, 'dist'),
