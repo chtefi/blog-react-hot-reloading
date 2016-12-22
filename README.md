@@ -5,5 +5,4 @@ npm install
 node server.js
 ```
 
-Then play in `src/Hello.js`.
- 
+Open `http://localhost:3000` then play in `src/Hello.js`.
