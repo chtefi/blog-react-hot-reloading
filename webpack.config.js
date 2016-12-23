@@ -3,8 +3,9 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: [
-        './src/index.js',
+        'react-hot-loader/patch',
         'webpack-hot-middleware/client',
+        './src/index.js',
     ],
     output: {
         path: path.join(__dirname, 'dist'),
@@ -14,7 +15,7 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.js$/,
-            loaders: ['react-hot-loader'],
+            loaders: ['react-hot-loader/webpack'],
             include: path.join(__dirname, 'src'),
         }]
     },
